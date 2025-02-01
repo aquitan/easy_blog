@@ -1,5 +1,4 @@
 import { createBrowserRouter } from "react-router";
-import App from "../App";
 import About from "../pages/about/About";
 import Home from "../pages/home/Home";
 import New from "../pages/new/New";
@@ -9,11 +8,12 @@ import PostsList from "../pages/postsList/PostsList";
 import Create from "../pages/create/Create";
 import Login from "../pages/login/Login";
 import Register from "../pages/register/Register";
+import MainLayout from "../layout/MainLayout";
 
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <MainLayout />,
     children: [
       { path: "/", element: <Home /> },
       { path: "/new", element: <New /> },

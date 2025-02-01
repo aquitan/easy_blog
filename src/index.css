@@ -1,8 +1,21 @@
 @import "tailwindcss";
 
+@theme {
+	--color-primary: #ea642b;
+	--color-primary-50: rgba(234, 100, 43, .1);
+	--color-primary-500: rgba(234, 100, 43, .5);
+	--color-text: #27272A;
+}
+
 body {
 	background-color: #eee;
 	width: 100vw;
 	overflow-x: hidden !important;
 	font-family: 'Jost', sans-serif;
+}
+
+
+
+.animatedButton {
+	animation-duration: 10000ms;
 }

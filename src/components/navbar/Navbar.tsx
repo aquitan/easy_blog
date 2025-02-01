@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Image } from '../image/Image';
 import { Link } from "react-router";
+import { SignedIn, SignedOut, UserButton } from "@clerk/clerk-react";
 
 const Navbar = () => {
   const [open, setOpen] = useState<boolean>(false);
@@ -17,11 +18,17 @@ const Navbar = () => {
         <Link to="/new">Новое</Link>
         <Link to="/popular">Популярное</Link>
         <Link to="/about">О нас</Link>
-        <Link to="">
-          <button className="py-2 px-4 rounded-2xl bg-amber-500 text-white">
-            Войти{" "}
-          </button>
-        </Link>
+        <SignedOut>
+          <Link to="/login">
+            <button className="py-2 px-4 rounded-2xl bg-primary text-white">
+              Войти{" "}
+            </button>
+          </Link>
+        </SignedOut>
+        <SignedIn>
+          <UserButton />
+        </SignedIn>
+        <Link to=""></Link>
       </div>
       {/* MOBILE MENU */}
       <div className="md:hidden">
@@ -41,11 +48,16 @@ const Navbar = () => {
           <Link to="/new">Новое</Link>
           <Link to="/popular">Популярное</Link>
           <Link to="/about">О нас</Link>
-          <Link to="">
-            <button className="py-2 px-4 rounded-2xl bg-amber-500 text-white">
-              Войти{" "}
-            </button>
-          </Link>
+          <SignedOut>
+            <Link to="/login">
+              <button className="py-2 px-4 rounded-2xl bg-primary text-white">
+                Войти{" "}
+              </button>
+            </Link>
+          </SignedOut>
+          <SignedIn>
+            <UserButton />
+          </SignedIn>
         </div>
       </div>
     </div>
