@@ -1,5 +1,11 @@
 import { Link } from "react-router";
-import { Image, PostMenuActions } from "../../components";
+import {
+  Comments,
+  Comment,
+  Image,
+  PostDetailSearch,
+  PostMenuActions,
+} from "../../components";
 import VkIcon from "../../assets/vk-icon.svg";
 import TgIcon from "../../assets/tg-icon.svg";
 
@@ -184,8 +190,18 @@ const Post = () => {
                 Маркетинг
               </Link>
             </div>
+            <h2>Поиск</h2>
+            <PostDetailSearch />
           </div>
         </div>
+      </div>
+      <Comments />
+      <div>
+        <Comment />
+        <Comment />
+        <Comment />
+        <Comment />
+        <Comment />
       </div>
     </div>
   );

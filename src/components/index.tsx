@@ -6,3 +6,6 @@ export { FeaturedPosts } from "./featuredPosts/FeaturedPosts";
 export { PostPreview } from "./postPreview/PostPreview";
 export { PostsList } from "./postsList/PostsList";
 export { PostMenuActions } from "./postMenuActions/PostMenuActions";
+export { PostDetailSearch } from "./postDetailSearch/PostDetailSearch";
+export { Comments } from "./comments/Comments";
+export { Comment } from "./comment/Comment";
