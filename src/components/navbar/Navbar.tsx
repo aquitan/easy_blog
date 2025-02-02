@@ -40,7 +40,7 @@ const Navbar = () => {
         </div>
         {/* MOBILE LINK LIST */}
         <div
-          className={`w-full h-screen flex flex-col items-center justify-center absolute top-16 ${
+          className={`bg-bg-color w-full h-screen flex flex-col items-center justify-center absolute top-16 ${
             open ? "-right-0" : "-right-[100%]"
           } transition-all ease-in-out`}
         >

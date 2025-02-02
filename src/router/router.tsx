@@ -4,7 +4,7 @@ import Home from "../pages/home/Home";
 import New from "../pages/new/New";
 import Popular from "../pages/popular/Popular";
 import Post from "../pages/post/Post";
-import PostsList from "../pages/postsList/PostsList";
+import PostsList from "../pages/posts/Posts";
 import Create from "../pages/create/Create";
 import Login from "../pages/login/Login";
 import Register from "../pages/register/Register";
@@ -20,7 +20,7 @@ export const router = createBrowserRouter([
       { path: "/popular", element: <Popular /> },
       { path: "/about", element: <About /> },
       { path: "/post/:slug", element: <Post /> },
-      { path: "/posts-list", element: <PostsList /> },
+      { path: "/posts", element: <PostsList /> },
       { path: "/create", element: <Create /> },
       { path: "/login", element: <Login /> },
       { path: "/register", element: <Register /> },

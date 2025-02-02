@@ -5,6 +5,7 @@
 	--color-primary-50: rgba(234, 100, 43, .1);
 	--color-primary-500: rgba(234, 100, 43, .5);
 	--color-text: #27272A;
+	--color-bg-color: #eee;
 }
 
 body {

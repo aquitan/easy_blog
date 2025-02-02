@@ -9,3 +9,4 @@ export { PostMenuActions } from "./postMenuActions/PostMenuActions";
 export { PostDetailSearch } from "./postDetailSearch/PostDetailSearch";
 export { Comments } from "./comments/Comments";
 export { Comment } from "./comment/Comment";
+export { SideMenu } from "./sideMenu/SideMenu";

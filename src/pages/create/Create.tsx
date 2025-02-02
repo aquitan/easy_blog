@@ -5,13 +5,13 @@ import "react-quill/dist/quill.snow.css";
 const Create = () => {
   const { isLoaded, isSignedIn } = useUser();
 
-  // if (!isLoaded) {
-  //   return <div>Загрузка...</div>;
-  // }
+  if (!isLoaded) {
+    return <div>Загрузка...</div>;
+  }
 
-  // if (isLoaded || !isSignedIn) {
-  //   return <div>Вам нужно авторизоваться</div>;
-  // }
+  if (isLoaded && !isSignedIn) {
+    return <div>Вам нужно авторизоваться</div>;
+  }
 
   return (
     <div className="h-[calc(100vh-63px)] md:h-[calc(100vh-80px)] flex flex-col gap-6">
