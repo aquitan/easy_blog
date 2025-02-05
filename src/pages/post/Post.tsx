@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+import { Link, useParams } from "react-router";
 import {
   Comments,
   Comment,
@@ -10,6 +10,9 @@ import VkIcon from "../../assets/vk-icon.svg";
 import TgIcon from "../../assets/tg-icon.svg";
 
 const Post = () => {
+  const params = useParams();
+  console.log("params", params);
+
   return (
     <div className="flex flex-col gap-8">
       {/* details */}

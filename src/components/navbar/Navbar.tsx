@@ -8,10 +8,13 @@ const Navbar = () => {
   return (
     <div className="w-full h-16 md:h-20 flex items-center justify-between">
       {/* LOGO */}
-      <div className="flex items-center gap-4 text-2xl font-bold">
+      <Link
+        to="/"
+        className="flex items-center gap-4 text-2xl font-bold cursor-pointer"
+      >
         <Image path="logo_easy_blog.svg" className="w-8 h-8" alt="Logo" />
         <span>EasyBlog</span>
-      </div>
+      </Link>
       {/* DESKTOP MENU */}
       <div className="hidden md:flex items-center gap-8 xl:gap-12 font-medium">
         <Link to="/">Главная</Link>

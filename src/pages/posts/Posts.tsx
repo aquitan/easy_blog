@@ -14,7 +14,7 @@ const Posts = () => {
         {!open ? "Показать фильтр" : "Скрыть фильтр"}
       </button>
       <div className="flex gap-8 flex-col-reverse md:flex-row">
-        <div className="">
+        <div className="w-full ">
           <PostsList />
         </div>
         <div className={`${open ? "block" : "hidden"} md:block`}>
