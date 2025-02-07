@@ -10,3 +10,4 @@ export { PostDetailSearch } from "./postDetailSearch/PostDetailSearch";
 export { Comments } from "./comments/Comments";
 export { Comment } from "./comment/Comment";
 export { SideMenu } from "./sideMenu/SideMenu";
+export { Loader } from "./loader/Loader";
